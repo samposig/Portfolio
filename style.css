@@ -1,11 +1,12 @@
 * {
-    box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+/* adding gradient to background of page */
 body {
-    background-color: aliceblue;
     background-image: linear-gradient(rgb(112, 103, 103),rgb(111, 33, 33));
 }
+
+/* adding gradient to just header and setting demensions */
 header {
     color: white;
     height: 500px;
@@ -13,12 +14,14 @@ header {
     background-image: linear-gradient(rgb(112, 103, 103),rgb(111, 33, 33));
     padding: 10px;
 }
+/* name text within header is larger than the rest of the text and a shadow effect was added */
 header h1 {
     font-style: oblique;
     font-size: 60px;
     text-align: left;
     text-shadow: 2px 2px black;
 }
+/* font size and family set for nav bar or header */
 header nav {
     margin-right: 20px;
     float: right;
@@ -32,6 +35,7 @@ header nav ul li {
     display: inline-block;
     margin-left: 5px;
 }
+/* pic of me added to center of header */
 .pic {
     height: 400px;
     width: 40%;
@@ -46,21 +50,22 @@ header nav ul li {
 
 .AboutMe {
     display: grid;
-    height: 300px;
-
+    height: 200px;
 }
+
+/* setting label to left side of page */
 h1 {
-    width: 20%;
+    width: 30%;
     margin: 20px;
     text-align: center;
     vertical-align: middle;
     font-size: 40px;
     color: white;
 }
-
+/* giving space between paragraphs and around paragraphs */
 p {
     margin-right: 15px;
-    padding: 20px;
+    padding: 15px;
     clear: both;
     float: right;
     font-size: 20px;
@@ -116,7 +121,7 @@ footer h1 {
     display: inline-block;  
     font-size: 20px;
 }
-
+/* list only take 75% of the page giving room for title */
 footer ul {
     margin-right: 20px;
     padding: 20px;
@@ -125,15 +130,37 @@ footer ul {
     display: inline-block;
 }
 
+/* adding space between items in the list and setting text vertical */
 footer ul li {
     display: inline-block;
     margin: 25px;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
+@media screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* The navbar container */
+nav {
+    overflow: hidden;
+  }
+  
+  /* Navbar links */
+nav ul {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    nav ul li {
+      float: none;
       width: 100%;
-      display: block;
-      margin-bottom: 20px;
     }
 }
