@@ -59,7 +59,6 @@ h1 {
 }
 
 p {
-    border-left: 5px solid darkblue;
     margin-right: 15px;
     padding: 20px;
     clear: both;
@@ -89,8 +88,8 @@ p {
     color: white;
     font: 40px;
   }
-
-  .card {
+/* creating look of card- background black, text white */
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     margin: 20px;
@@ -99,6 +98,12 @@ p {
     background-color: #161515;
   }
 
+  /* making title of project bigger than links text */
+.title {
+    font-size: 20px;
+}
+
+/* aligning text on bottom vertically and setting text white */
 footer {
     display: inline-block;
     width: 100%;
