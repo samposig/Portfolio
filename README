@@ -9,13 +9,13 @@ Porfessional portfolio used to showcase the my skills as a developer, and give m
 -[Screenshot](#screenshot)
 -[License](#license)
 
-##Deployed Webpage
+## Deployed Webpage
 -https://samposig.github.io/Portfolio/
 
 ## Installation
 To install, go to https://github.com/samposig/Portfolio.  On the top right side click the button labled "code".  Copy the html, open a terminal, and enter 'git clone' + the html link you copied.  This will clone repository down to your local computer.
 
-##Screenshot
+## Screenshot
 ![Screenshot of Portfolio](screenshot 2022-03-02 231015.png)
 
 ## License
